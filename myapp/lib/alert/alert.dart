@@ -20,7 +20,9 @@ AlertDialog alertSuccess = AlertDialog(
         color: Colors.green,
       ),
       Container(
-          margin: const EdgeInsets.only(left: 10),
+          height: 20,
+          width: 60,
+          decoration: BoxDecoration(borderRadius: BorderRadius.circular(20)),
           child: const Center(child: Text('Successful purchase!!!')))
     ],
   ),
