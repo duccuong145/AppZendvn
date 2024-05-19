@@ -26,7 +26,7 @@ class _CartScreenState extends State<CartScreen> {
         return alertLoading;
       },
     );
-    Future.delayed(Duration(seconds: 2), () {
+    Future.delayed(const Duration(seconds: 2), () {
       Provider.of<OrderProvider>(context, listen: false)
           .buy(Provider.of<CartProvider>(context, listen: false).items)
           .then((value) => {
