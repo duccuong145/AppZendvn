@@ -14,7 +14,7 @@ class Register extends StatefulWidget {
 
 class _RegisterState extends State<Register> {
   Future<void> _launchURL(String url) async {
-    final Uri uri = Uri.parse(url); // Use Uri.parse instead of Uri.https
+    final Uri uri = Uri.parse(url); 
     if (!await launchUrl(
       uri,
       mode: LaunchMode.externalApplication,
